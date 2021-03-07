@@ -2,10 +2,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //Importing Styles
 import './App.css';
-import "./style.css"
+import "./index.css"
 
 //Importing from HomeComponents
-import Header from "./HomeComponents/Header/Header";
+import Navbars from "./Navbar/Navbars"
 
 
 //Importing pages
@@ -17,8 +17,9 @@ function App() {
     return (
       <Route {...rest} component={(props) => (
         <>
-         <Header /> {/* HEADER ALWAYS VISIBLE */}
-        <Component {...props} />
+          {/* Navbars ALWAYS VISIBLE */}
+          <Navbars />
+          <Component {...props} />
         </>
 
       )}
@@ -28,7 +29,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <PublicRoute exact path="/" component={Home}  />
+        <PublicRoute exact path="/" component={Home} />
       </Switch>
 
     </Router>

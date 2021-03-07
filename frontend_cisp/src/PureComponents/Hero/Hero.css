@@ -1,15 +1,9 @@
 /* two Hero component one for default and one for employee page */
-.defaultHero,
-.employeeHero {
-  min-height: calc(100vh - 66px);
+.defaultHero{
+  min-height: calc(80vh - 40px);
   background: url("../../Images/homePic.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.employeeHero {
-  /* background-image: url("../Images/employee.jpg"); */
-  background: url("../../Images/homePic.jpg") center/cover no-repeat;
-  min-height: 50vh;
 }
 /* End of Hero */
