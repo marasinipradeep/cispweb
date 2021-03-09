@@ -8,9 +8,10 @@ const Navigation = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0px 200px 0;
-  height: 140px;
+  height: 100px;
   margin-bottom: 0px;
   background: #ffffff;
+  font-weight:bold;
 
   .logo {
     width: 10%;
@@ -63,6 +64,12 @@ const Navigation = styled.header`
     a.active {
       color: #222;
     }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    padding: 0px 200px 0;
+    height: 140px;
+    
   }
 
   @media only screen and (max-width: 800px) {

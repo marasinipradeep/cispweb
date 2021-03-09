@@ -1,0 +1,15 @@
+
+.about{
+background-color: lightgreen;
+}
+  .about-content h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    text-align: left;
+  }
+  .about-content p{
+    font-size: 1.3em;
+    text-align: left;
+  }
+ 
+   

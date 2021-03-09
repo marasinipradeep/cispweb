@@ -4,14 +4,14 @@
 /* ==========================================================================
    Responsive images and box padding
    ========================================================================== */
-
+/* 
 img,
 object {
   display: block;
   border: 0;
   max-width: 100%;
   height: auto;
-}
+} */
 
 * {
   -moz-box-sizing: border-box;

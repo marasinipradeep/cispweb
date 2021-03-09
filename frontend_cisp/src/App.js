@@ -5,11 +5,14 @@ import './App.css';
 import "./index.css"
 
 //Importing from HomeComponents
-import Navbars from "./Navbar/Navbars"
+import Navbars from "./Navbar/Navbars";
+import NewNavBars from './Navbar/NewNavbar';
 
 
 //Importing pages
 import Home from "./Pages/HomePage/Home";
+import AboutUs from "./AboutUs/AboutUs";
+import Services from './Services/Services';
 
 function App() {
 
@@ -18,7 +21,7 @@ function App() {
       <Route {...rest} component={(props) => (
         <>
           {/* Navbars ALWAYS VISIBLE */}
-          <Navbars />
+          <NewNavBars />
           <Component {...props} />
         </>
 
@@ -30,6 +33,8 @@ function App() {
     <Router>
       <Switch>
         <PublicRoute exact path="/" component={Home} />
+        <PublicRoute exact path="/about-us" component={AboutUs}/>
+        <PublicRoute exact path="/services" component={Services}/>
       </Switch>
 
     </Router>
