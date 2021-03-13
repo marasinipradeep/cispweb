@@ -5,8 +5,9 @@ import './App.css';
 import "./index.css"
 
 //Importing from HomeComponents
-import Navbars from "./Navbar/Navbars";
-import NewNavBars from './Navbar/NewNavbar';
+import NewNavBars from './Navbar/Navbar';
+import Footer from './Footer/Footer';
+import Bottomfooter from './BottomFooter/BottomFooter';
 
 
 //Importing pages
@@ -21,9 +22,11 @@ function App() {
     return (
       <Route {...rest} component={(props) => (
         <>
-          {/* Navbars ALWAYS VISIBLE */}
+          {/* Navbars and Footer ALWAYS VISIBLE */}
           <NewNavBars />
           <Component {...props} />
+          <Footer/>
+          <Bottomfooter/>
         </>
 
       )}

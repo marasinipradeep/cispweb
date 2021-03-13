@@ -4,7 +4,7 @@ import { FaAlignRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 
 import TopHeading from "../HomeComponents/TopHeader/TopHeading";
-import "./NewNavbar.css";
+import "./Navbar.css";
 
 class Navbar extends Component {
     constructor(props) {

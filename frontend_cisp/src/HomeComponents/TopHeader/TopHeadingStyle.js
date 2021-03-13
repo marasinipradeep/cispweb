@@ -29,7 +29,6 @@ div {
     background:green;
     height:50px;
     color:white;
-    border-radius:20px;
     font-size:1em;
   }
 
@@ -51,8 +50,6 @@ div {
   @media only screen and (max-width: 640px) {
     display:none;
   }
-
-
   }
 `;
 
