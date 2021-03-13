@@ -13,6 +13,7 @@ import NewNavBars from './Navbar/NewNavbar';
 import Home from "./Pages/HomePage/Home";
 import AboutUs from "./AboutUs/AboutUs";
 import Services from './Services/Services';
+import ContactUs from './ContactUs/ContactUs';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <PublicRoute exact path="/" component={Home} />
         <PublicRoute exact path="/about-us" component={AboutUs}/>
         <PublicRoute exact path="/services" component={Services}/>
+        <PublicRoute exact path="/contact-us" component={ContactUs}/>
       </Switch>
 
     </Router>

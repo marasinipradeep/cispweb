@@ -6,6 +6,7 @@ import Hero from '../../PureComponents/Hero/Hero';
 import Banner from '../../PureComponents/Banner/Banner';
 import AboutUS from '../../AboutUs/AboutUs';
 import Services from '../../Services/Services';
+import ContactUs from '../../ContactUs/ContactUs';
 
 
 export default function Home() {
@@ -18,8 +19,9 @@ export default function Home() {
                     </Link>
                 </Banner>
             </Hero>
-            <AboutUS/>
-            <Services/>
+            <AboutUS />
+            <Services />
+            <ContactUs />
         </>
     )
 }
