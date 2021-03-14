@@ -10,7 +10,7 @@ export default function Bottomfooter(props) {
                     <p>Copyright © 2021 CISP PTY Limited All Rights Reserved.</p>
                 </div>
                 <div className="col-md-6">
-                    <p>Powered By:<Link to="/">CISP TECH PTY LTD</Link></p>
+                    <p>Powered By:<Link to="/" className="text-light">CISP TECH PTY LTD</Link></p>
                 </div>
             </div>
         </div>

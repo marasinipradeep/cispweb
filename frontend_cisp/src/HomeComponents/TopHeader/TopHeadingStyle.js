@@ -1,26 +1,31 @@
 import styled from "styled-components";
 
-const TopHeading = styled.header`
 
+const TopHeading = styled.header`
 margin-top:1px;
 border-bottom: 0px solid #222;
 padding: 0px 50px 0px 120px;
 height: 50px;
-background: #ebf6f5;
-font-size: 0.8em;
-color:green;
+background: #FAFAFA;
 
 div {
     float: left;
-    padding: 15px; 
+    padding: 10px 0px; 
   }
   
   .float-left {
+    font-family:Open Sans, sans-serif;
+    font-size:15px;
+   color:#888888;
+    
+    margin:0px 20px 0px 0px;
   }
   
   .float-right {
     float:right;
     padding: 0px 300px 0px 0px;
+    
+
   }
 
   button{

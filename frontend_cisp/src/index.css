@@ -1,6 +1,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+/* Import sans sarif font weight 600 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 /* ==========================================================================
    Responsive images and box padding
    ========================================================================== */

@@ -13,7 +13,7 @@ export default function Contactus(props) {
                     <h2>Our Social Media Links: <SocialLinks /></h2>
                 </div>
 
-                <div className="col-sm-12 col-md-6">
+                <div className="col-sm-12 col-md-6 jumbotron">
                     <input placeholder="Name"  className="m-4"/>
                     <input placeholder="Email" className="m-4" /><br/>
                     <input placeholder="Subject" className="m-4" /><br/>
