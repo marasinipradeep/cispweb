@@ -5,12 +5,12 @@ export default function Bottomfooter(props) {
 
     return (
         <div className="container-fluid">
-            <div className="row bg-secondary">
+            <div className="row bg-dark mt-1">
                 <div className="col-md-6">
-                    <p>Copyright © 2021 CISP PTY Limited All Rights Reserved.</p>
+                    <p className="text-light">Copyright © 2021 <a href="https://cisp.com.au/" className="text-info">CISP PTY</a> Limited All Rights Reserved.</p>
                 </div>
                 <div className="col-md-6">
-                    <p>Powered By:<Link to="/" className="text-light">CISP TECH PTY LTD</Link></p>
+                    <p className="text-light">Powered By:<Link to="/" className="text-info">CISP TECH PTY LTD</Link></p>
                 </div>
             </div>
         </div>

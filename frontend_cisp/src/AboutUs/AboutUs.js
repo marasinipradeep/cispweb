@@ -20,7 +20,7 @@ export default function AboutMe() {
         ` Additionally, Kiran having a managerial nursing background brings clinical expertise and staff training with evidence-based learning. She likewise continually updates our polices and strategy and a reckoned leader to implement them. They have together built up a profoundly committed and proactive team.`)
 
     return (
-        <div className='container about'>
+        <div className='container-fluid  about'>
             <div className="row">
                 <div className="col-xs-12 col-md-6 about-content">
                     <h1>About.</h1>
