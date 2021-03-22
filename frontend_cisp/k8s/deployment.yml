@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cisp-website
+spec:
+  selector:
+      matchLabels:
+        app: cisp-website
+  replicas: 3
+  template:
+      metadata:
+        labels:
+            app: cisp-website
+      spec:
+        containers:
+        - name: cisp-website
+          image: cisptechacr.azurecr.io/frontend_cisp:v1
+          imagePullPolicy: Always
+          readinessProbe:
+            httpGet:
+              port: 8080
+              path: /
+          livenessProbe:
+            httpGet:
+              port: 8080
+              path: /
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
