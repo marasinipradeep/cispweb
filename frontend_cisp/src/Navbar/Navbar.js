@@ -47,12 +47,12 @@ class Navbar extends Component {
                             <li>
                                 <Link to="/services">Services</Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link to="/carrier">Career</Link>
-                            </li>
-                            <li>
+                            </li> */}
+                            {/* <li>
                                 <Link to="/">Blog</Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link to="/contact-us">Contact us</Link>
                             </li>

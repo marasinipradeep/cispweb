@@ -1,7 +1,8 @@
 
 import React, { useState } from "react";
-import { LinkedIn, Copyright, Phone, Email, Face, Facebook, Place } from '@material-ui/icons';
+import { Phone, Email,Place } from '@material-ui/icons';
 import SocialLink from "../../PureComponents/SocialLinks/SocialLink";
+import { Link } from 'react-router-dom';
 import TopHeading from './TopHeadingStyle';
 
 
@@ -21,7 +22,10 @@ export default function Topheading(props) {
 
         <div className="float-right">
           <SocialLink />
-          <button primary>GET A QUOTE</button>
+          <button primary>
+          <Link to="/contact-us">GET A QUOTE</Link>
+            
+            </button>
         </div>
       </TopHeading>
     </>

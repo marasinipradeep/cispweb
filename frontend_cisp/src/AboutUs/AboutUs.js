@@ -9,15 +9,15 @@ export default function AboutMe() {
 
     //Setting state
     const [aboutMeParagraphOne, setAboutMeOne] = useState(
-        `CISP - Bringing Excellence in Environmental Solutions, Human Friendly Cleaning Services and Building Sustainable Homes.`)
+        `CISP - Bringing Excellence in Environmental Solutions, Human Friendly Cleaning Services, Greenhouse Farming and Tech Solution.`)
 
     const [aboutMeParagraphTwo, setAboutMeTwo] = useState(
-        ` We are South Australian family owned business. Working toward excellence in every venture we work on. We do not compromise in employee training and customer satisfaction.`)
+        ` WWe are South Australian partner owned business. Working toward excellence in every venture we work on. We do not compromise in employee training and customer satisfaction.`)
     const [aboutMeParagraphThree, setAboutMeThree] = useState(
-        `Anugra our Managing Director and Kiran our Chief Operations Manager have worked together for years to give South Australia excellent service. Anugra has an environmental engineering background bringing environmentally friendly solutions to all our clients.`)
+        `We are an Australian Registered Company working for all Australians.`)
 
     const [aboutMeParagraphFour, setAboutMeFour] = useState(
-        ` Additionally, Kiran having a managerial nursing background brings clinical expertise and staff training with evidence-based learning. She likewise continually updates our polices and strategy and a reckoned leader to implement them. They have together built up a profoundly committed and proactive team.`)
+        ` We service our clients with utmost commitment and confidentiality. As a result, we are well reviewed and recommended by our clients.`)
 
     return (
         <div className='container-fluid  about'>

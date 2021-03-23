@@ -37,6 +37,11 @@ div {
     font-size:1em;
   }
 
+  button a{
+    text-decoration:none;
+    color:white;
+  }
+
   @media only screen and (max-width: 1024px) {
     padding: 0px 50px 0px 200px;
   }
