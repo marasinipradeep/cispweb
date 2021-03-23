@@ -1,53 +1,277 @@
 
-import { Card, Button } from 'react-bootstrap';
-import SolarPic from "../Images/solar.jpg";
-import CleaningPic from "../Images/cleaning.png"
-import FarmingPic from "../Images/farming.png";
-import TechPic from "../Images/tech.png";
+//import { Card, Button } from 'react-bootstrap';
+import { deepOrange } from '@material-ui/core/colors';
+import Button from '@material-ui/core/Button';
+import CleaningPic from "../Images/cleaning.jpg"
+import FarmingPic from "../Images/farming.jpeg";
+import TechPic from "../Images/tech.jpeg";
+
 
 import "./Services.css"
-export default function Services(props) {
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import Collapse from '@material-ui/core/Collapse';
+import Avatar from '@material-ui/core/Avatar';
+import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+import { red } from '@material-ui/core/colors';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import ShareIcon from '@material-ui/icons/Share';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
 
+const useStyles = makeStyles((theme) => ({
+    
+    media: {
+        height: 0,
+        paddingTop: '56.25%', // 16:9
+    },
+    expand: {
+        transform: 'rotate(0deg)',
+        marginLeft: 'auto',
+        transition: theme.transitions.create('transform', {
+            duration: theme.transitions.duration.shortest,
+        }),
+    },
+    expandOpen: {
+        transform: 'rotate(180deg)',
+    },
+    avatar: {
+        backgroundColor: red[500],
+    },
+}));
 
+export default function RecipeReviewCard() {
+    const classes = useStyles();
+    const [expanded, setExpanded] = React.useState(false);
 
+    const handleExpandClick = () => {
+        setExpanded(!expanded);
+    };
 
     return (
         <div className="container-fluid services">
-            <h1> Our Services</h1>
-            <div className="row m-4">
-
-                <Card className="col-sm-12 col-md-3 m-1">
-                    <Card.Img src={CleaningPic} />
-                    <Card.Body>
-                        <Card.Title>CISP Cleaning </Card.Title>
-                        <Card.Text>
-
-                        </Card.Text>
-                        <Button variant="primary">More Info Click Here</Button>
-                    </Card.Body>
+            <h1>Our Services.</h1>
+            <div className="row">
+                <Card className="root col-sm-12 col-md-4">
+                    <CardHeader
+                        avatar={
+                            <Avatar aria-label="recipe" className={classes.avatar}>C </Avatar>
+                        }
+                        // action={
+                        //     <IconButton aria-label="settings">
+                        //         <MoreVertIcon />
+                        //     </IconButton>
+                        // }
+                        title="CISP CLEANING SERVICE"
+                        subheader="Our reputation is spotless"
+                    />
+                    <CardMedia
+                        className={classes.media}
+                        image={CleaningPic}
+                        title="Paella dish"
+                    />
+                    <CardContent>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            We work to improve your lifestyle
+                            Make your home pleasant sparkling clean and disinfect all areas
+                            Our cleaners are well screened, trained and excellent human beings.
+        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <IconButton aria-label="add to favorites">
+                            <FavoriteIcon />
+                        </IconButton>
+                        <IconButton aria-label="share">
+                            <ShareIcon />
+                        </IconButton>
+                        <IconButton
+                            className={clsx(classes.expand, {
+                                [classes.expandOpen]: expanded,
+                            })}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </IconButton>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>Method:</Typography>
+                            <Typography paragraph>
+                                We understand first impression counts for your clients.
+                                A spotless cleaning can help you look more professional and dedication to details.
+                                We come to you understand your needs and create scope of work and achieve it every day.
+          </Typography>
+                            <Typography paragraph>
+                                We work to improve your lifestyle
+                                Make your home pleasant sparkling clean and disinfect all areas
+                                Our cleaners are well screened, trained and excellent human beings.
+          </Typography>
+                            <Typography paragraph>
+                                Health sectors are a vital organ of our community who care for our elderly and the sick.
+                                We understand one of the major requirements in this sector are infection control and disinfection.
+                                We understand the sensitivity of these industry and have prepared and trained our cleaners accordingly.
+          </Typography>
+                            <Typography>
+                                As we have an eye for detailed cleaning.
+                                Our dedicated team who work with precision will deliver a sharp looking retail shop and shopping complex.
+                                We also offer continuous attendant for your shopping complex to maintain cleanness and hygiene.
+          </Typography>
+                        </CardContent>
+                    </Collapse>
                 </Card>
 
-                <Card className="col-sm-12 col-md-3 m-2">
-                    <Card.Img src={FarmingPic} />
-                    <Card.Body>
-                        <Card.Title>CISP Farming</Card.Title>
-                        <Card.Text>
-                        </Card.Text>
-                        <Button variant="primary">More Info Click Here</Button>
-                    </Card.Body>
+
+                <Card className="root col-sm-12 col-md-4">
+                    <CardHeader
+                        avatar={
+                            <Avatar aria-label="recipe" className={classes.avatar}>F </Avatar>
+                        }
+                        // action={
+                        //     <IconButton aria-label="settings">
+                        //         <MoreVertIcon />
+                        //     </IconButton>
+                        // }
+                        title="CISP FARM SERVICE"
+                        subheader="Cultivating Ideas for Growth"
+                    />
+                    <CardMedia
+                        className={classes.media}
+                        image={FarmingPic}
+                        title="Paella dish"
+                    />
+                    <CardContent>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            We work to improve your lifestyle
+                            Make your home pleasant sparkling clean and disinfect all areas
+                            Our cleaners are well screened, trained and excellent human beings.
+        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <IconButton aria-label="add to favorites">
+                            <FavoriteIcon />
+                        </IconButton>
+                        <IconButton aria-label="share">
+                            <ShareIcon />
+                        </IconButton>
+                        <IconButton
+                            className={clsx(classes.expand, {
+                                [classes.expandOpen]: expanded,
+                            })}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </IconButton>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>Method:</Typography>
+                            <Typography paragraph>
+                                We understand first impression counts for your clients.
+                                A spotless cleaning can help you look more professional and dedication to details.
+                                We come to you understand your needs and create scope of work and achieve it every day.
+          </Typography>
+                            <Typography paragraph>
+                                We work to improve your lifestyle
+                                Make your home pleasant sparkling clean and disinfect all areas
+                                Our cleaners are well screened, trained and excellent human beings.
+          </Typography>
+                            <Typography paragraph>
+                                Health sectors are a vital organ of our community who care for our elderly and the sick.
+                                We understand one of the major requirements in this sector are infection control and disinfection.
+                                We understand the sensitivity of these industry and have prepared and trained our cleaners accordingly.
+          </Typography>
+                            <Typography>
+                                As we have an eye for detailed cleaning.
+                                Our dedicated team who work with precision will deliver a sharp looking retail shop and shopping complex.
+                                We also offer continuous attendant for your shopping complex to maintain cleanness and hygiene.
+          </Typography>
+                        </CardContent>
+                    </Collapse>
                 </Card>
 
-                <Card className="col-sm-12 col-md-3 m-1">
-                    <Card.Img src={TechPic} />
-                    <Card.Body>
-                        <Card.Title>CISP Tech</Card.Title>
-                        <Card.Text>
 
-                        </Card.Text>
-                        <Button variant="primary">More Info Click Here</Button>
-                    </Card.Body>
+
+                <Card className="root col-sm-12 col-md-4">
+                    <CardHeader
+                        avatar={
+                            <Avatar aria-label="recipe" className={classes.avatar}>T </Avatar>
+                        }
+                        // action={
+                        //     <IconButton aria-label="settings">
+                        //         <MoreVertIcon />
+                        //     </IconButton>
+                        // }
+                        title="CISP TECH SERVICE"
+                        subheader="When Performance Matters."
+                    />
+                    <CardMedia
+                        className={classes.media}
+                        image={TechPic}
+                        title="Paella dish"
+                    />
+                    <CardContent>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            We work to improve your lifestyle
+                            Make your home pleasant sparkling clean and disinfect all areas
+                            Our cleaners are well screened, trained and excellent human beings.
+        </Typography>
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <IconButton aria-label="add to favorites">
+                            <FavoriteIcon />
+                        </IconButton>
+                        <IconButton aria-label="share">
+                            <ShareIcon />
+                        </IconButton>
+                        <IconButton
+                            className={clsx(classes.expand, {
+                                [classes.expandOpen]: expanded,
+                            })}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="show more"
+                        >
+                            <ExpandMoreIcon />
+                        </IconButton>
+                    </CardActions>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>
+                            <Typography paragraph>Method:</Typography>
+                            <Typography paragraph>
+                                We understand first impression counts for your clients.
+                                A spotless cleaning can help you look more professional and dedication to details.
+                                We come to you understand your needs and create scope of work and achieve it every day.
+          </Typography>
+                            <Typography paragraph>
+                                We work to improve your lifestyle
+                                Make your home pleasant sparkling clean and disinfect all areas
+                                Our cleaners are well screened, trained and excellent human beings.
+          </Typography>
+                            <Typography paragraph>
+                                Health sectors are a vital organ of our community who care for our elderly and the sick.
+                                We understand one of the major requirements in this sector are infection control and disinfection.
+                                We understand the sensitivity of these industry and have prepared and trained our cleaners accordingly.
+          </Typography>
+                            <Typography>
+                                As we have an eye for detailed cleaning.
+                                Our dedicated team who work with precision will deliver a sharp looking retail shop and shopping complex.
+                                We also offer continuous attendant for your shopping complex to maintain cleanness and hygiene.
+          </Typography>
+                        </CardContent>
+                    </Collapse>
                 </Card>
             </div>
         </div>
-    )
+    );
 }

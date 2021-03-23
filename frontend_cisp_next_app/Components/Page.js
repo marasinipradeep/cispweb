@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types';
 import Header from './Header';
-export default function Page({children}) {
-    
+import Nav from './Nav';
 
+export default function Page({ children }) {
     return (
         <>
-        <Header/>
+            <Header />
+            <Nav />
             <h1>I am the Page Component</h1>
             {children}
         </>
     )
 }
 
-Page.prototype={
-    children:PropTypes.any,
+Page.prototype = {
+    children: PropTypes.any,
 };

@@ -1,6 +1,7 @@
 // add bootstrap css 
 import 'bootstrap/dist/css/bootstrap.css'
-import '../styles/globals.css'
+import '../styles/globals.css';
+import "../Components/styles/Navbar.css"
 import Page from '../Components/Page';
 
 function MyApp({ Component, pageProps }) {
