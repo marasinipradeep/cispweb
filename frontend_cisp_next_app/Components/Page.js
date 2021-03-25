@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from './Header';
 import Nav from './Nav';
 import NewNav from './NewNav';
+import HeroImage from './HeroImage';
 
 export default function Page({ children }) {
     return (
@@ -11,7 +12,7 @@ export default function Page({ children }) {
             <Header />
             <NewNav/>
             {/* <Nav /> */}
-            <h1>I am the Page Component</h1>
+            <HeroImage/>
             {children}
             </Container>
         </>

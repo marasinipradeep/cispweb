@@ -3,7 +3,7 @@ export default function Button(props) {
 
 
     return (
-        <Buttons>GET QUOTE</Buttons>
+        <Buttons>{props.children}</Buttons>
     )
 }
 

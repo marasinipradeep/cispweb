@@ -10,7 +10,7 @@ export default function Header(props) {
         <TopHeader>
             <AddressBar />
             <Sociallink />
-            <Button />
+            <Button> Get Quote</Button>
         </TopHeader>
     );
 }
