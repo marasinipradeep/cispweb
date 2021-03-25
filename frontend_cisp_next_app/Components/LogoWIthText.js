@@ -4,7 +4,6 @@ export default function Logowithtext(props) {
 
 
     return (
-        <>
             <LogoTxtDiv>
                 <Link href="/">
                     <Logo alt="Logo" src={'/cisp.png'} />
@@ -13,8 +12,6 @@ export default function Logowithtext(props) {
                     <LogoText>CREATIVE INFORMATIVE <br />SUPPORTIVE PARTNERS</LogoText>
                 </Link>
             </LogoTxtDiv>
-
-        </>
     )
 }
 
@@ -27,7 +24,7 @@ const Logo = styled.img`
   text-decoration: none;
   font-weight: 700;
   font-size: 1.7rem;
-  width:10%;
+  width:17%;
   cursor:pointer;
   
 `;

@@ -15,17 +15,20 @@ export default function Menubar(props) {
             </Hamburger>
             <Menu isOpen={isOpen}>
 
+            <Link href="/aboutus">
+                    <MenuLink>Home</MenuLink>
+                </Link>
+
                 <Link href="/aboutus">
-                    <MenuLink>About us</MenuLink>
+                    <MenuLink>About</MenuLink>
                 </Link>
                 <Link href="/services">
                     <MenuLink>Services</MenuLink>
                 </Link>
                 <Link href="/contactus">
-                    <MenuLink>Contact us</MenuLink>
+                    <MenuLink>Contact</MenuLink>
                 </Link>
             </Menu>
-
         </>
     )
 }
@@ -38,8 +41,8 @@ const MenuLink = styled.a`
   text-transform:uppercase;
   color: #666666;
   transition: all 0.3s ease-in;
-  font-size: 0.9rem;
-  font-weight:700;
+  font-size: 1rem;
+  font-weight:800;
   &:hover {
     color: #7b7fda;
   }
