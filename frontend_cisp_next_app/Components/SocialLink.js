@@ -1,9 +1,10 @@
-import { LinkedIn, Copyright, Phone, Email, Face, Facebook, Place } from '@material-ui/icons';
+import Styled from "styled-components";
+import { LinkedIn, Facebook} from '@material-ui/icons';
 export default function Sociallink(props) {
 
 
     return (
-        <div className="container-fluid" >
+        <SocialLinks  >
                 <a href="https://www.facebook.com/cisp.com.au" target="_blank">
                     <Facebook />
                 </a>
@@ -11,6 +12,12 @@ export default function Sociallink(props) {
                     <LinkedIn />
                 </a>
                     <button>GET QUOTE</button>
-        </div>
+        </SocialLinks>
     )
 }
+
+const SocialLinks = Styled.div`
+
+`;
+
+
