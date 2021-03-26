@@ -24,8 +24,7 @@ export default function Addressbar(props) {
 const Heading = styled.div`
   
   color: #666666;
-  @media (max-width: 768px) {
-  display:none
+  
   }
 `;
 

@@ -14,4 +14,6 @@ const Buttons = styled.button`
   font-size: 1em;
   margin:0px;
   padding:10px 20px;
+
+  
 `;

@@ -8,13 +8,11 @@ import HeroImage from './HeroImage';
 export default function Page({ children }) {
     return (
         <>
-        <Container>
             <Header />
-            <NewNav/>
-            {/* <Nav /> */}
+             <NewNav/>
+             {/*
             <HeroImage/>
-            {children}
-            </Container>
+            {children} */}
         </>
     )
 }
@@ -22,7 +20,3 @@ export default function Page({ children }) {
 Page.prototype = {
     children: PropTypes.any,
 };
-const Container = styled.div`
-  background: #67bc98;
-  height: 100vh;
-`;

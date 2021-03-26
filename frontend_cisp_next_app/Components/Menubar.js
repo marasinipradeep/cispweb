@@ -46,6 +46,25 @@ const MenuLink = styled.a`
   &:hover {
     color: #7b7fda;
   }
+
+  @media screen and (max-width: 1600px) and (min-width: 1300px) {
+    font-weight:700;
+  }
+  
+  @media screen and (max-width: 1300px) and (min-width: 900px) {
+    font-size: 0.8rem;
+    font-weight:700;
+  }
+  
+  @media screen and (max-width: 900px) and (min-width: 780px) {
+    font-size: 0.8rem;
+    font-weight:700;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    font-weight:700;
+  }
 `;
 
 const Menu = styled.div`
@@ -53,6 +72,9 @@ const Menu = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+  
+
   @media (max-width: 768px) {
     overflow: hidden;
     flex-direction: column;
@@ -66,10 +88,12 @@ const Hamburger = styled.div`
   display: none;
   flex-direction: column;
   cursor: pointer;
+  margin-top: 20px;
   span {
     height: 2px;
     width: 25px;
     background: #7b7fda;
+   
     margin-bottom: 4px;
     border-radius: 5px;
   }
