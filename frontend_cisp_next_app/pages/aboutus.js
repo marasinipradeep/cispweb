@@ -8,6 +8,9 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Avatar from '@material-ui/core/Avatar';
 import Image from 'next/image';
+
+
+import AboutUsMission from '../Components/AboutUsMission';
 //Import profile image
 
 const useStyles = makeStyles((theme) => ({
@@ -45,10 +48,10 @@ export default function Aboutus() {
 
             <Grid item xs={12} sm={6} >
                 <Jumbotron>
-                    <Typography>{aboutMeParagraphOne}</Typography>
-                    <Typography>{aboutMeParagraphTwo}</Typography>
-                    <Typography>{aboutMeParagraphThree}</Typography>
-                    <Typography>{aboutMeParagraphFour}</Typography>
+                    <Typography style={{ fontSize: 30 }}>{aboutMeParagraphOne}</Typography>
+                    <Typography style={{ fontSize: 30 }}>{aboutMeParagraphTwo}</Typography>
+                    <Typography style={{ fontSize: 30 }}>{aboutMeParagraphThree}</Typography>
+                    <Typography style={{ fontSize: 30 }}>{aboutMeParagraphFour}</Typography>
                 </Jumbotron>
 
 
@@ -64,10 +67,10 @@ export default function Aboutus() {
                     />
                 </Jumbotron>
             </Grid>
-
-
-
+            <AboutUsMission/>
         </Grid>
+
+      
 
     );
 }
@@ -77,8 +80,6 @@ padding: 5rem 10rem;
 font-size:15px;
   margin-bottom: 2rem;
   background-color: #FFFFFF;
-
-  
 
   @media (max-width: 768px) {
     padding: 0rem 1rem;
