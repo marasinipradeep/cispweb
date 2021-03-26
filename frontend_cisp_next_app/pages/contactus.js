@@ -1,15 +1,11 @@
 import React from 'react';
+import Styled from "styled-components";
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Email from '@material-ui/icons/Email';
-import WrapText from '@material-ui/icons/WrapText';
 import SocialLinks from '../Components/SocialLink';
 
 const useStyles = makeStyles((theme) => ({
@@ -22,7 +18,7 @@ export default function Contactus(props) {
     const classes = useStyles();
 
     return (
-        <div className="container-fluid">
+        <Contact className="container-fluid">
             <div className="row">
                 <div className="col-sm-12 col-md-6 jumbotron ">
                     <h1 >Find Us</h1>
@@ -74,6 +70,40 @@ export default function Contactus(props) {
 
                 </div>
             </div>
-        </div>
+        </Contact>
     )
 }
+
+
+const Contact = Styled.div`
+padding: 250px 100px;
+color:#000000;
+background: #FFFFFF;
+
+@media screen and (max-width: 1600px) and (min-width: 1300px) {
+    padding: 0rem 10rem;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 900px) {
+    padding: 0rem 5rem;
+ }
+
+ @media screen and (max-width: 900px) and (min-width: 780px) {
+    padding: 0rem 0rem;
+}
+@media screen and (max-width: 780px) and (min-width: 312px) {
+    display:block;
+    align-items: center;
+    padding:0px 50px
+  }
+
+  @media (max-width: 312px) {
+    display:block;
+    align-items: center;
+    padding:0px 30px
+  }
+
+`
+
+
+
