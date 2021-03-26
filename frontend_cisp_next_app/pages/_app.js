@@ -4,7 +4,7 @@ import '../styles/globals.css';
 import "../Components/styles/Navbar.css"
 import Page from '../Components/Page';
 
-function MyApp({ Component, pageProps }) {
+ function MyApp({ Component, pageProps }) {
   return(
   <Page>
     <Component {...pageProps} />
@@ -12,4 +12,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default MyApp;

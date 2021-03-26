@@ -3,34 +3,33 @@ import styled from "styled-components";
 import Link from "next/link";
 
 export default function Menubar(props) {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
 
-    return (
-        <>
-            <Hamburger onClick={() => setIsOpen(!isOpen)}>
-                <span />
-                <span />
-                <span />
-            </Hamburger>
-            <Menu isOpen={isOpen}>
+  return (
+    <>
+      <Hamburger onClick={() => setIsOpen(!isOpen)}>
+        <span />
+        <span />
+        <span />
+      </Hamburger>
+      <Menu isOpen={isOpen}>
+        <Link href="/">
+          <MenuLink>Home</MenuLink>
+        </Link>
 
-            <Link href="/aboutus">
-                    <MenuLink>Home</MenuLink>
-                </Link>
-
-                <Link href="/aboutus">
-                    <MenuLink>About</MenuLink>
-                </Link>
-                <Link href="/services">
-                    <MenuLink>Services</MenuLink>
-                </Link>
-                <Link href="/contactus">
-                    <MenuLink>Contact</MenuLink>
-                </Link>
-            </Menu>
-        </>
-    )
+        <Link href="/aboutus">
+          <MenuLink>About</MenuLink>
+        </Link>
+        <Link href="/services">
+          <MenuLink>Services</MenuLink>
+        </Link>
+        <Link href="/contactus">
+          <MenuLink>Contact</MenuLink>
+        </Link>
+      </Menu>
+    </>
+  )
 }
 
 const MenuLink = styled.a`

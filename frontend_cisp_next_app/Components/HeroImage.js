@@ -6,7 +6,7 @@ export default function Heroimage(props) {
 
     return (
        
-            <LazyHero imageSrc="https://unsplash.it/2000/1000" isFixed={true} color="#010101" minHeight="80vh">
+            <LazyHero imageSrc="https://unsplash.it/2000/1000" isFixed={true} color="#010101" minHeight="60vh">
                 
                 <HeroHeading>We provide consultation and manage from start to end.</HeroHeading>
                 <br />

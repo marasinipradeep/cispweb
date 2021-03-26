@@ -9,10 +9,9 @@ export default function Page({ children }) {
     return (
         <>
             <Header />
-             <NewNav/>
-            <HeroImage/>
-            {/*
-            {children} */}
+            <NewNav />
+            <HeroImage />
+            {children}
         </>
     )
 }
