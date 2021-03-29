@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Styled from 'styled-components';
 
+import LazyHero from 'react-lazy-hero';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
@@ -43,46 +45,43 @@ export default function Aboutus() {
 
     const classes = useStyles();
     return (
+        <div className="container-fluid">
+            <div className="row">
+                <Jumbotron className="row">
+                    <h3 className="display-4">About Us</h3>
+                    <p className="lead col-md-7">{aboutMeParagraphOne} {aboutMeParagraphTwo} {aboutMeParagraphThree} {aboutMeParagraphFour}</p>
 
-        <Grid container>
-
-            <Grid item xs={12} sm={6} >
-                <Jumbotron>
-                    <Typography style={{ fontSize: 30 }}>{aboutMeParagraphOne}</Typography>
-                    <Typography style={{ fontSize: 30 }}>{aboutMeParagraphTwo}</Typography>
-                    <Typography style={{ fontSize: 30 }}>{aboutMeParagraphThree}</Typography>
-                    <Typography style={{ fontSize: 30 }}>{aboutMeParagraphFour}</Typography>
+                    <img src="https://i.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" class="img-fluid col-md-5" alt="Responsive image"/>
                 </Jumbotron>
+                <AboutUsMission />
 
+            </div>
+        </div>
 
-            </Grid>
-
-            <Grid item xs={12} sm={6}>
-                <Jumbotron>
-                    <Image
-                        src="/about.jpeg"
-                        alt="Picture of the author"
-                        width={500}
-                        height={400}
-                    />
-                </Jumbotron>
-            </Grid>
-            <AboutUsMission/>
-        </Grid>
-
-      
 
     );
 }
 
-const Jumbotron = Styled.div`
-padding: 5rem 10rem;
-font-size:15px;
-  margin-bottom: 2rem;
-  background-color: #FFFFFF;
+const Jumbotron = Styled.section`
+background: white;
+padding: 3em;
+box-shadow: 0 0 3em rgba(0,0,0,.15);
+width: max(300px, 100%);
 
-  @media (max-width: 768px) {
-    padding: 0rem 1rem;
-    margin:0px;
+h3{
+    margin: 0 0 1.5rem;
+    color: var(--clr-primary);
+    line-height: .8;
+    //font-size: clamp(2rem, 5vw, 5rem);
+}
+
+  p{
+      //font-size: clamp(1rem, 1.25vw, 1.25rem);
   }
+    
+`
+
+const AboutImage = Styled.div`
+padding: 0rem 0rem;
+
 `

@@ -3,14 +3,13 @@ export default function Button(props) {
 
 
     return (
-        <Buttons>{props.children}</Buttons>
+        <Buttons type="button" className="btn" role="button">{props.children}</Buttons>
     )
 }
 
 const Buttons = styled.button`
 padding: 0.5rem 2rem;
 margin-right:5px;
-display: flex;
 align-items: center;
 position: relative;
 text-transform: uppercase;
@@ -20,14 +19,9 @@ background: #63C672;
 border: 0;
 cursor: pointer;
 color: #FFFFFF;
-@media (max-width: 700px) {
-  font-size: 10px;
-  padding: 0 10px;
-}
 &:before {
   content: '';
   width: 2px;
-  background: var(--lightGrey);
   height: 100%;
   left: 0;
   position: absolute;
@@ -53,16 +47,7 @@ color: #FFFFFF;
   &:after {
     width: calc(100% - 60px);
   }
-  @media (max-width: 700px) {
-    width: calc(100% - 10px);
-  }
 }
-}
-@media (max-width: 1300px) {
-border-top: 1px solid var(--lightGrey);
-width: 100%;
-justify-content: center;
-font-size: 1.5rem;
 }
   
 `;

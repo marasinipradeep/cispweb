@@ -5,9 +5,8 @@ export default function Heroimage(props) {
 
 
     return (
-       
+        <div className="container-fluid">
             <LazyHero imageSrc="https://unsplash.it/2000/1000" isFixed={true} color="#010101" minHeight="60vh">
-                
                 <HeroHeading>We provide consultation and manage from start to end.</HeroHeading>
                 <br />
                 <br />
@@ -15,9 +14,11 @@ export default function Heroimage(props) {
                 <HeroButton>
                     <Button>OUR SERVICES</Button>
                     <Button>GET A QUOTE</Button>
-                    </HeroButton>
+                </HeroButton>
             </LazyHero>
-            
+
+        </div>
+
     )
 }
 
@@ -28,4 +29,5 @@ text-transform: uppercase;
 
 const HeroButton = Styled.div`
 display:flex;
+justify-content:center;
 `;

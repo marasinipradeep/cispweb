@@ -4,31 +4,32 @@ export default function Addressbar(props) {
 
 
     return (
-        <Heading>
-            <Address>
-            <Place /> 222 Kesters Road Para Hills SA 5096
-          
+        <div className="container-fluid">
+            <Heading className="row">
+                <Address className="col-md">
+                    <Place style={{ fontSize: 30 }}/> 222 Kesters Road Para Hills SA 5096
+
             </Address>
-            <Address>
-            <Email className="ml-3" /> admin@cisp.com
-          
+                <Address className="col-md">
+                    <Email style={{ fontSize: 30 }}/> admin@cisp.com
             </Address>
-            <Address>
-            <Phone className="ml-3" /> +0416080519
+
+                <Address className="col-md">
+                    <Phone/> +0416080519
             </Address>
-           
-        </Heading>
+
+            </Heading>
+        </div>
     )
 }
 
 const Heading = styled.div`
-  
   color: #666666;
   
   }
 `;
 
 const Address = styled.address`
-display:inline;
-margin:4px;
+//display:inline;
+//margin:4px;
 `
