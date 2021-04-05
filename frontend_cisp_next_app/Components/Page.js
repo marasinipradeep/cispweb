@@ -11,9 +11,9 @@ export default function Page({ children }) {
             <Header />
             <NewNav />
             {children}
-            <Footer/>
-            <Bottomfooter/>
-            </>
+            <Footer />
+            <Bottomfooter />
+        </>
     )
 }
 

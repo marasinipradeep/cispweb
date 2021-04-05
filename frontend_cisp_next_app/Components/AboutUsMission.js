@@ -7,7 +7,6 @@ export default function Aboutusmission(props) {
 
 
     return (
-        <div className="container-fluid">
             <AboutUs className="row">
                 <div className="col-sm-12 col-md-4" >
                     <h3><LayersOutlinedIcon style={{ fontSize: 80 }} />
@@ -27,7 +26,6 @@ export default function Aboutusmission(props) {
                     <p>We service our clients with utmost commitment and confidentiality. As a result, we are well reviewed and recommended by our clients.</p>
                 </div>
             </AboutUs>
-        </div>
     )
 }
 

@@ -45,18 +45,16 @@ export default function Aboutus() {
 
     const classes = useStyles();
     return (
-        <div className="container-fluid">
-            <div className="row">
+            <Jumbotron >
+                   <H3 className="display-4">About Us</H3>
                 <Jumbotron className="row">
-                    <h3 className="display-4">About Us</h3>
-                    <p className="lead col-md-7">{aboutMeParagraphOne} {aboutMeParagraphTwo} {aboutMeParagraphThree} {aboutMeParagraphFour}</p>
+                    <p className="lead col-md">{aboutMeParagraphOne} {aboutMeParagraphTwo} {aboutMeParagraphThree} {aboutMeParagraphFour}</p>
 
                     <img src="https://i.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU" class="img-fluid col-md-5" alt="Responsive image"/>
                 </Jumbotron>
                 <AboutUsMission />
 
-            </div>
-        </div>
+            </Jumbotron>
 
 
     );
@@ -68,17 +66,19 @@ padding: 3em;
 box-shadow: 0 0 3em rgba(0,0,0,.15);
 width: max(300px, 100%);
 
-h3{
-    margin: 0 0 1.5rem;
-    color: var(--clr-primary);
-    line-height: .8;
-    //font-size: clamp(2rem, 5vw, 5rem);
-}
+
 
   p{
       //font-size: clamp(1rem, 1.25vw, 1.25rem);
   }
     
+`
+
+const H3 = Styled.h3`
+    margin: 0 0 1.5rem;
+    color: var(--clr-primary);
+    line-height: .8;
+    font-size: clamp(2rem, 5vw, 5rem);
 `
 
 const AboutImage = Styled.div`

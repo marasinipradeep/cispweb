@@ -5,14 +5,11 @@ import Image from 'next/image';
 export default function Chooseus(props) {
 
     return (
-        <div className="container-fluid">
+        <>
             <Heading> WHY CHOOSE US </Heading>
             <Paragraph>We carry the beacon of inclusiveness, hard work and empowerment.</Paragraph>
 
-          
-
             <Cards className="row">
-
             <div className="col-sm-12 col-md-1 "></div>
 
                 <div className="col-sm-12 col-md-2 card">
@@ -45,7 +42,6 @@ export default function Chooseus(props) {
 
                 <div className="col-sm-12 col-md-1 "></div>
 
-
                 <div className="col-sm-12 col-md-2 card">
                     <LayersOutlinedIcon />
                     <div class="card-body">
@@ -55,15 +51,19 @@ export default function Chooseus(props) {
                 </div>
             </Cards>
 
-        </div >
+            </>
     )
 }
 
 const Heading = Styled.h2`
+margin: 0 0 1.5rem;
+color: var(--clr-primary);
+line-height: .8;
 padding-top:4rem;
 padding-bottom:0.2rem;
 display:flex;
 justify-content:center;
+font-size: clamp(2rem, 5vw, 5rem);
 `
 
 const Paragraph = Styled.p`
@@ -74,7 +74,6 @@ justify-content:center;
 
 const Cards = Styled.div`
 padding:4rem 10rem;
-
 @media (max-width: 768px) {
     padding:0rem 0rem;
 

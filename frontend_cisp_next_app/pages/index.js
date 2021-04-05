@@ -6,14 +6,16 @@ import Services from "../pages/services";
 import HeroImage from "../Components/HeroImage";
 import ContactUs from "../pages/contactus";
 import ChooseUs from "../Components/ChooseUs";
+import OurSolutions from "../Components/Index/OurSolutions";
 
 export default function Home() {
   return (
     <>
       <HeroImage/>
       <AboutUS />
-      <ChooseUs/>
-      <Services />
+      {/* <ChooseUs/> */}
+      <OurSolutions/>
+      {/* <Services /> */}
       <ContactUs/>
     </>
   )

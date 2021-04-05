@@ -3,18 +3,18 @@ export default function Button(props) {
 
 
     return (
-        <Buttons type="button" className="btn" role="button">{props.children}</Buttons>
+        <Buttons type="button" className="btn " role="button">{props.children}</Buttons>
     )
 }
 
 const Buttons = styled.button`
-padding: 0.5rem 2rem;
+//padding: 0.5rem 2rem;
 margin-right:5px;
 align-items: center;
 position: relative;
 text-transform: uppercase;
 font-weight: 500;
-font-size: 1em;
+//font-size: 1em;
 background: #63C672;
 border: 0;
 cursor: pointer;
